@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.9">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+            <!-- child views -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/author"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+            android:layout_weight="0.07" android:orientation="vertical">
+            <!-- child views -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="-"
+                android:id="@+id/dash"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+            android:layout_weight="1" android:orientation="vertical">
+            <!-- child views -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/song_name"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/quick_chords_layout"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/quick_chords_text"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#A4C639"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A4C639"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Song name"
+        android:id="@+id/song_name"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@android:color/white"
+        android:scrollbars = "vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/song_lyrics"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Lyrics" />
+    </ScrollView>
+</LinearLayout>

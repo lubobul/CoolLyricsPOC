@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Awesome lyrics</string>
+    <string name="title_activity_add_word">Add new lyrics</string>
+
+    <!--main activity action bar-->
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_search">Search</string>
+
+    <!--add word activity action bar-->
+    <string name="action_save">Save</string>
+    <string name="action_back">Back</string>
+    <string name="title_activity_edit_word">Edit Lyrics</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

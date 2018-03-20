@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ta.mydictionary.AddLyricsActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- child views -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Author"
+                    android:id="@+id/new_author"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_text_author"
+                    android:layout_gravity="center_horizontal"
+                    android:editable="false"
+                    android:elegantTextHeight="false"
+                    android:enabled="false" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+                android:layout_weight="0.07" android:orientation="vertical">
+                <!-- child views -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="-"
+                    android:id="@+id/dash"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+                android:layout_weight="1" android:orientation="vertical">
+                <!-- child views -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Song name"
+                    android:id="@+id/translation"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_text_song_name"
+                    android:layout_gravity="center_horizontal"
+                    android:editable="true"
+                    android:enabled="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Chords"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/edit_chords" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Lyrics"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/edit_song_lyrics" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
